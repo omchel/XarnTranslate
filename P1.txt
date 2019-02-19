@@ -1,0 +1,51 @@
+Program 1
+
+Authors: Maria Paolini and Chelina Ortiz Montanez
+
+References used:
+ - Python Tutorial reference for creating Dynamic Web Pages
+	https://ahn.cs.luc/python/hands-on/3.1/handsonHtml/dynamic.html
+ - HTML Styles Manual to modify the style of the HTML site
+	https://www.w3schools.com/html/html_styles.asp
+ - Python Library Reference for Debugging CGI scripts
+	https://docs.python.org/2.0/lib/node246.html
+ - StackOverflow question on how to style CGI
+	https://stackoverflow.com/questions/27259982/how-to-style-cgi-python-with-css
+ - Hex color codes for HTML
+	https://www.w3schools.com/colors/colors_picker.asp
+ -Opening and reading text files
+	http://stackabuse.com/read-a-file-line-by-line-in-python/ 
+	https://www.computerhope.com/issues/ch001721.htm 
+-.split() reference
+	http://www.pythonforbeginners.com/dictionary/python-split
+-Helped in formatting the HTML and python, used for spacing
+	http://xmodulo.com/create-use-python-cgi-scripts.html 
+-Idea on how to form the style tags
+	https://www.w3schools.com/tags/att_style_type.asp
+-Use of <span>
+	http://forums.htmlhelp.com/index.php?showtopic=1849 
+
+Collaborations:
+ - Paul Linton: provided feedback on logic and syntax errors.
+
+Project's URL:
+	https://www.cs.uky.edy/~cor228/Program1/xarnTranslate.html
+
+Project Description:
+ A universal web application that performs basic translations to help Xelkalai, the alien from planet Xarnaco.
+Using Python CGI Dynamic Websites, we create the program that will evaluate the input for the user, check that there is a translation for it and if there isn't, show an error for the input.
+
+What does the CGI do if one of the fields is completely missing?
+ It assumes the field was blank and returns it  an invalid input.  
+
+What does the CGI do if the value of a field is blank?
+ When printing the values, it will return the field that was blank as "None" and the translated word is returned as "invalid"
+
+Did you test your CGI with a client such as curl?
+ No.
+
+What happens if one of the field values submitted is a string of 100 characters? 1000 characters? 10000 characters?
+ It will return it as "unknown" if the string is not in the file, or as "invalid" if the other fields are empty.
+
+How did you test the previous question?
+ Inputing various different strings with various character lengths.
